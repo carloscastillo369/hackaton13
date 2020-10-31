@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+h4, h5, p {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.container {
+    width: 900px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+/*CABECERA*/
+.header {
+    width: 100%;
+    height: 80px;   
+    background: skyblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.button {
+    width: 150px;
+    height: 40px;
+    border-radius:5px;
+    background: salmon;
+}
+
+
+/*CONTENIDO PRINCIPAL*/
+.main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 10px;
+    padding-top: 20px;
+    background: rgb(212, 172, 97);
+}
+
+/*CONTENEDOR DEL CARD*/
+.card {
+    position: relative;
+    width: 200px;
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    background: white;
+}
+
+
+.card:hover .button-card {
+    visibility: visible;
+}
+
+.buttons-container {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+}
+
+.button-card {
+    width: 40px;
+    height: 20px;
+    font-size: 10px;
+    background: white;
+    border: none;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-card:hover {
+    cursor: pointer;
+}
+
+.img-button {
+    width: 12px;
+    height: 12px;
+}
+
+.info-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 0;
+}
