@@ -47,6 +47,12 @@ h4, h5, p {
     background: salmon;
 }
 
+.button:hover {
+    cursor: pointer;
+    background:blue;
+    color: white;
+}
+
 
 /*CONTENIDO PRINCIPAL*/
 .main {
@@ -112,4 +118,87 @@ h4, h5, p {
     flex-direction: column;
     align-items: center;
     padding: 5px 0;
+}
+
+/*MODAL EDITAR*/
+.modal-container {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.452);
+    position: fixed;
+    z-index: 10;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.modal-edit {
+    width: 600px;
+    height: 500px;
+    padding: 20px;
+    margin: auto;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+}
+
+.header-modal {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+input, select {
+    width: 270px;
+    height: 40px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.buttons-modal {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.close-modal {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    background: none;
+}
+
+.close-modal:hover {
+    cursor: pointer;
+    background: skyblue;
+    border-radius: 5px;
+}
+
+/*MOSTRAR Y OCULTAR*/
+.mostrar {
+    display: flex;
+}
+
+.ocultar {
+    display: none;
 }
