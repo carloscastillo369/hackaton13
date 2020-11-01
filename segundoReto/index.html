@@ -27,8 +27,8 @@
                 </div>
                 <div class="info-card">
                     <img src="./img/dog1.png" alt="">
-                    <h3>Nombre</h3>
-                    <h4>Telefono | Correo</h4>
+                    <h3>Nombre <span>Apellido</span></h3>
+                    <h4>Raza | <span>Telefono</span></h4>
                     <h5>Pais</h5>
                     <p>About me About me About me About me About me About me About me About me About me About me About me About me</p> 
                 </div>
@@ -47,8 +47,8 @@
                 </div>
                 <div class="info-card">
                     <img src="./img/dog2.png" alt="">
-                    <h3>Nombre</h3>
-                    <h4>Telefono | Correo</h4>
+                    <h3>Nombre <span>Apellido</span></h3>
+                    <h4>Raza | <span>Telefono</span></h4>
                     <h5>Pais</h5>
                     <p>About me About me About me About me About me About me About me About me About me About me About me About me</p> 
                 </div>
@@ -67,8 +67,8 @@
                 </div>
                 <div class="info-card">
                     <img src="./img/dog3.png" alt="">
-                    <h3>Nombre</h3>
-                    <h4>Telefono | Correo</h4>
+                    <h3>Nombre <span>Apellido</span></h3>
+                    <h4>Raza | <span>Telefono</span></h4>
                     <h5>Pais</h5>
                     <p>About me About me About me About me About me About me About me About me About me About me About me About me</p> 
                 </div>
@@ -87,8 +87,8 @@
                 </div>
                 <div class="info-card">
                     <img src="./img/dog4.png" alt="">
-                    <h3>Nombre</h3>
-                    <h4>Telefono | Correo</h4>
+                    <h3>Nombre <span>Apellido</span></h3>
+                    <h4>Raza | <span>Telefono</span></h4>
                     <h5>Pais</h5>
                     <p>About me About me About me About me About me About me About me About me About me About me About me About me</p> 
                 </div>
@@ -107,8 +107,8 @@
                 </div>
                 <div class="info-card">
                     <img src="./img/dog5.png" alt="">
-                    <h3>Nombre</h3>
-                    <h4>Telefono | Correo</h4>
+                    <h3>Nombre <span>Apellido</span></h3>
+                    <h4>Raza | <span>Telefono</span></h4>
                     <h5>Pais</h5>
                     <p>About me About me About me About me About me About me About me About me About me About me About me About me</p> 
                 </div>
@@ -127,8 +127,8 @@
                 </div>
                 <div class="info-card">
                     <img src="./img/dog6.png" alt="">
-                    <h3>Nombre</h3>
-                    <h4>Telefono | Correo</h4>
+                    <h3>Nombre <span>Apellido</span></h3>
+                    <h4>Raza | <span>Telefono</span></h4>
                     <h5>Pais</h5>
                     <p>About me About me About me About me About me About me About me About me About me About me About me About me</p> 
                 </div>
@@ -147,8 +147,8 @@
                 </div>
                 <div class="info-card">
                     <img src="./img/dog7.png" alt="">
-                    <h3>Nombre</h3>
-                    <h4>Telefono | Correo</h4>
+                    <h3>Nombre <span>Apellido</span></h3>
+                    <h4>Raza | <span>Telefono</span></h4>
                     <h5>Pais</h5>
                     <p>About me About me About me About me About me About me About me About me About me About me About me About me</p> 
                 </div>
@@ -167,8 +167,8 @@
                 </div>
                 <div class="info-card">
                     <img src="./img/dog8.png" alt="">
-                    <h3>Nombre</h3>
-                    <h4>Telefono | Correo</h4>
+                    <h3>Nombre <span>Apellido</span></h3>
+                    <h4>Raza | <span>Telefono</span></h4>
                     <h5>Pais</h5>
                     <p>About me About me About me About me About me About me About me About me About me About me About me About me</p> 
                 </div>
@@ -176,29 +176,58 @@
         </main>
     </div>
 
+    <!-- MODAL EDITAR-->
     <div id="modalEdit" class="modal-container">
         <div class="modal-edit">
             <div class="header-modal">
-                <h2>Agregar Mascota</h2>
+                <h2>Editar Mascota</h2>
                 <button id="close" class="close-modal">X</button>
             </div>
             <form>
-                <input id="name" type="text" placeholder="Nombre">
-                <input clas="lastname" type="text" placeholder="Apellido">
-                <input class="raza" type="text" placeholder="Raza">
-                <input class="phone" type="text" placeholder="Telefono">
-                <select class="country" name="pais" id="">
-                    <option value="">País</option>
-                    <option value="">Perú</option>
-                    <option value="">Argentina</option>
-                    <option value="">Brasil</option>
+                <input id="editName" type="text" placeholder="Nombre">
+                <input id="editLastName" type="text" placeholder="Apellido">
+                <input id="editRaza" type="text" placeholder="Raza">
+                <input id="editTelefono" type="text" placeholder="Telefono">
+                <select id="editPais" name="pais" id="">
+                    <option value="Pais">Pais</option>
+                    <option value="Peru">Peru</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Brasil">Brasil</option>
                 </select>
-                <input class="img" type="text" placeholder="Url de fotografia">
-                <textarea class="info" name="" cols="30" rows="10" placeholder="Sobre él/ella"></textarea>
+                <input id="editUrl" type="text" placeholder="Url de fotografia">
+                <textarea id="editInfo" name="" cols="30" rows="10" placeholder="Sobre él/ella"></textarea>
             </form>
             <div class="buttons-modal">
-                <button id="botonAceptar" class="button aceptar">Aceptar</button>
-                <button class="button cancelar">Cancelar</button>
+                <button id="btnAceptar" class="button">Aceptar</button>
+                <button id="btnCancel" class="button">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL AGREGAR-->
+    <div id="modalAdd" class="modal-container">
+        <div class="modal-edit">
+            <div class="header-modal">
+                <h2>Agregar Mascota</h2>
+                <button id="btnclose" class="close-modal">X</button>
+            </div>
+            <form>
+                <input id="name" type="text" placeholder="Nombre">
+                <input id="lastname" type="text" placeholder="Apellido">
+                <input id="raza" type="text" placeholder="Raza">
+                <input id="phone" type="text" placeholder="Telefono">
+                <select id="country" name="pais" id="">
+                    <option value="0">Pais</option>
+                    <option value="Peru">Peru</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Brasil">Brasil</option>
+                </select>
+                <input id="img" type="text" placeholder="Url de fotografia">
+                <textarea id="info" name="" cols="30" rows="10" placeholder="Sobre él/ella"></textarea>
+            </form>
+            <div class="buttons-modal">
+                <button id="btnAgregar" class="button">Aceptar</button>
+                <button id="btnCancelar" class="button">Cancelar</button>
             </div>
         </div>
     </div>
